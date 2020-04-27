@@ -2,6 +2,12 @@ const React = require("react");
 require("./Timer.css");
 
 class Timer extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      time: 0,
+    }
+  }
   calculTemps() {
     let x = document.getElementById("nombre").value;
     let h = x / 3600;
@@ -15,8 +21,9 @@ class Timer extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div>
+      <div className="first">
+        <h1>MY TIMER</h1>
+        <div className="second">
           <p>
             Saisir le temps en seconde :
             <input
@@ -27,11 +34,11 @@ class Timer extends React.Component {
               size="10"
             />
           </p>
-          <p id="time">00 - 00 - 00</p>
+          <p id="time">{(this.state.time)}</p>
         </div>
-        <button>start</button>
-        <button>stop</button>
-        <button>reset</button>
+        <button className="btn">Start</button>
+        <button className="btn">Stop</button>
+        <button className="btn">Répeter</button>
       </div>
     );
   }

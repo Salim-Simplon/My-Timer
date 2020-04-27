@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://ak4.picdn.net/shutterstock/videos/27935344/thumb/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.first {
+  background-color: rgba(0, 0, 150, 0.815);
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+
+#nombre{
+    margin-left: 3%;
+    font-size: xx-large;
+}
+
+.btn{
+    font-size: x-large;
+    width: 20%;
+}
